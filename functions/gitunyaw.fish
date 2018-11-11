@@ -18,10 +18,10 @@ function gitunyaw -d "Replace Git SSH remote by HTTPS"
     set ssh (command git remote get-url $remote)
 
     if echo $ssh | grep -q 'https://.*'
-      echo "Git remote looks to be already a valid HTTPS remote" 
+      echo "Git remote looks to be already a valid HTTPS remote"
     else
-      set regex 's/git@\(.*\):\(.*\)\/\(.*\)\.git/https:\/\/\1\/\2\/\3.git/'
-      echo $ssh | sed -e "$regex" | read -l https
+      ## Replace remote with sed (extended regexp) then assign to variable $https
+      echo $ssh | sed -E "s~git@(.*):(.*)/(.*)\.git~https://\1/\2/\3.git~" | read -l https
       command git remote set-url "$remote" "$https"
       echo "Replaced '$ssh' by '$https'"
     end

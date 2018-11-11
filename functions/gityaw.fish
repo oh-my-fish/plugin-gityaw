@@ -18,10 +18,10 @@ function gityaw -d "Replace Git HTTPS remote by SSH"
     set https (command git remote get-url $remote)
 
     if echo $https | grep -q '.*@.*:.*'
-      echo "Git remote looks to be already a valid SSH remote" 
+      echo "Git remote looks to be already a valid SSH remote"
     else
-      set regex 's/https:\/\/\(.*\)\/\(.*\)\/\(.*\)\(.git\)*/git@\1:\2\/\3.git/' 
-      echo $https | sed -e "$regex" | sed -e 's/\.git\.git$/\.git/' | read -l ssh
+      ## Replace remote with sed (extended regexp) then assign to variable $ssh
+      echo $https | sed -E "s~https://(.*)/(.*)/(.*)(/|.git)~git@\1:\2\/\3.git~" | read -l ssh
       command git remote set-url "$remote" "$ssh"
       echo "Replaced '$https' by '$ssh'"
     end
