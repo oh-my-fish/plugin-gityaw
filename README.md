@@ -13,14 +13,18 @@
 ## Install
 
 ```fish
-$ omf install gityaw
+omf install gityaw
 ```
 
 
 ## Usage
 
 ```fish
-$ gityaw
+## Convert your remote from HTTPS to SSH
+gityaw
+
+## Convert your remote from SSH to HTTPS
+gitunyaw
 ```
 
 
@@ -30,8 +34,8 @@ $ gityaw
 
 
 [mit]:            https://opensource.org/licenses/MIT
-[author]:         https://github.com/{{USER}}
-[contributors]:   https://github.com/{{USER}}/plugin-gityaw/graphs/contributors
+[author]:         https://github.com/derekstavis
+[contributors]:   https://github.com/oh-my-fish/plugin-gityaw/graphs/contributors
 [omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
