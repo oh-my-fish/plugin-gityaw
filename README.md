@@ -25,17 +25,28 @@ gityaw
 
 ## Convert your remote from SSH to HTTPS
 gitunyaw
+
+## Convert from Github to Gitlab
+githublab
+
+## Convert from Gitlab to Github
+gitblabhub
 ```
+
+## TODO
+
+See TODO file.
 
 
 # License
 
-[MIT][mit] © [Derek Stavis][author] et [al][contributors]
+[MIT][mit] © [Derek Stavis][author] et [al][contributors].
+Contributors: [BarbzYHOOL][https://github.com/BarbzYHOOL] & [ranisalt][https://github.com/author]
 
 
 [mit]:            https://opensource.org/licenses/MIT
 [author]:         https://github.com/derekstavis
-[contributors]:   https://github.com/oh-my-fish/plugin-gityaw/graphs/contributors
+[contributors]:   https://github.com/BarbzYHOOL/plugin-gityaw/graphs/contributors
 [omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
