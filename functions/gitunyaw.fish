@@ -1,5 +1,5 @@
 function gitunyaw -d "Replace Git SSH remote by HTTPS"
-  if not git status >/dev/null ^&1
+  if not git status >/dev/null 2>&1
     echo "This doesn't look to be a git repository"
     return 1
   end
