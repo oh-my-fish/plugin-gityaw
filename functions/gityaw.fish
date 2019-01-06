@@ -1,5 +1,5 @@
 function gityaw -d "Replace Git HTTPS remote by SSH"
-  if not git status >/dev/null ^&1
+  if not git status >/dev/null 2>&1
     echo "This doesn't look to be a git repository"
     return 1
   end
