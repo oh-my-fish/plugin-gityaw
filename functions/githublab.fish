@@ -1,5 +1,5 @@
 function githublab -d "Replace Github remote by Gitlab"
-  if not git status >/dev/null ^&1
+  if not git status >/dev/null 2>&1
     echo "This doesn't look to be a git repository"
     return 1
   end
