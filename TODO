@@ -1,0 +1,2 @@
+- Turn githublab and gitlabhub into one function that either switch from one to the other automatically (unless bitbucket is added but I don't really use bitbucket)
+- Turn gityaw and gitunyaw into one function that switches from https to ssh
