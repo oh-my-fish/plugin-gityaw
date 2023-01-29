@@ -30,7 +30,7 @@ gitunyaw
 githublab
 
 ## Convert from Gitlab to Github
-gitblabhub
+gitlabhub
 ```
 
 ## TODO
